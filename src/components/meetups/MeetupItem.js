@@ -1,7 +1,7 @@
 import classes from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
-  const { image, title, address, description } = this.props;
+  const { image, title, address, description } = props.meetup;
   return (
     <li className={classes.item}>
       <div>
@@ -12,7 +12,7 @@ function MeetupItem(props) {
         <address>{address}</address>
         <p>{description}</p>
       </div>
-      <div className={classes.action}>
+      <div className={classes.actions}>
         <button>To Favorites</button>
       </div>
     </li>
