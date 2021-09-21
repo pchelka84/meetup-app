@@ -26,11 +26,6 @@ function AllMeetupsPage() {
     <div>
       <h1>All Meetups</h1>
       <MeetupList meetups={DUMMY_DATA} />
-      <ul>
-        {DUMMY_DATA.map((meetup) => {
-          return <li key={meetup.id}>{meetup.title}</li>;
-        })}
-      </ul>
     </div>
   );
 }
