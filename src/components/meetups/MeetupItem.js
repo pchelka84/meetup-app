@@ -2,12 +2,12 @@ import Card from "../ui/Card";
 import classes from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
-  const { image, title, address, description } = props.meetup;
+  const { image, title, address, description } = props;
   return (
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <img src={image} alt={title} />
+          <img src={image} alt={props.title} />
         </div>
         <div className={classes.content}>
           <h3>{title}</h3>
